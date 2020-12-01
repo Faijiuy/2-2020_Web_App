@@ -1,27 +1,27 @@
 var data = [
     {
         quantity: 1.5,
-        description: 'Stock Item Example 0001',
+        description: 'High Grade Calcium Silicate Powder',
         unitPrice: 1000.00,
         amount: 1500.00
     },
     {
         quantity: 1,
-        description: "Stock Item Example 0002",
+        description: "High Grade Sodium Metaboratev",
         unitPrice: 2000.00,
         amount: 2000.00
     },
     {
-        quantity: 1,
-        description: "Service Charge Invoicing Item 001",
+        quantity: 2,
+        description: "Chemical Compartment Sealing Fee",
         unitPrice: 100.00,
         amount: 200.00
     },
     {
         quantity: 1,
-        description: `Service Charge Invoicing Item 002<br/>
-Additional line 1 for this item<br/>
-Additional line 2 for this item`,
+        description: `Chemical Transfering Cost<br/>
+        For High Grade Calcium Silicate Powder<br/>
+        For High Grade Sodium Metaboratev`,
         unitPrice: 200.00,
         amount: 600.00
     }
