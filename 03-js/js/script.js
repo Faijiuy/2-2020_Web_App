@@ -27,36 +27,11 @@ Additional line 2 for this item`,
     }
 ]
 
-function renderDataTable() {
-    let subTotal = 0
-    $('#dataTable').html("")
-    data.forEach(function (item) {
-        subTotal += item.amount
-        let dataRow = `<tr>
-    <td class="data r">${item.quantity}</td>
-    <td class="data">${item.description}</td>
-    <td class="data r">${item.unitPrice}</td>
-    <td class="data r">${item.amount}</td>
-    </tr>`
-        console.log({ dataRow })
-        $('#dataTable').append(dataRow)
-    })
-
-    $('#subTotal').html(subTotal.toFixed(2))
-
-    let subTax = subTotal * 0.1
-    $('#tax').html(subTax.toFixed(2))
-
-    let shippH = 1000
-    $('#shipping').html(shippH.toFixed(2))
-
-    let totalDue = subTotal + subTax + shippH
-    $('#totalDue').html(totalDue.toFixed(2))
-
-}
+let shippH = 0
 
 $(document).ready(function () {
-    let count = 0;
+    let count = 0
+    let countB = 0
     console.log("Hello!")
 
     let d = new Date()
@@ -86,4 +61,41 @@ $(document).ready(function () {
         renderDataTable()
     })
 
+    $("#btnShip").click(function() {
+        console.log("Add Shipping & Handling Fee", countB)
+        countB++
+
+        let sh = prompt("Shipping & Handling Fee")
+        shippH = parseFloat(sh)
+        console.log("Shiping Fee: ", shippH)
+        renderDataTable()
+    })
+
 })
+
+function renderDataTable() {
+    let subTotal = 0
+    $('#dataTable').html("")
+    data.forEach(function (item) {
+        subTotal += item.amount
+        let dataRow = `<tr>
+    <td class="data r">${item.quantity}</td>
+    <td class="data">${item.description}</td>
+    <td class="data r">${item.unitPrice}</td>
+    <td class="data r">${item.amount}</td>
+    </tr>`
+        console.log({ dataRow })
+        $('#dataTable').append(dataRow)
+    })
+
+    $('#subTotal').html(subTotal.toFixed(2))
+
+    let subTax = subTotal * 0.1
+    $('#tax').html(subTax.toFixed(2))
+
+    $('#shipping').html(shippH.toFixed(2))
+
+    let totalDue = subTotal + subTax + shippH
+    $('#totalDue').html(totalDue.toFixed(2))
+
+}
