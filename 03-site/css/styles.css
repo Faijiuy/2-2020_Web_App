@@ -8,7 +8,7 @@
   
   /* Style the header */
   header {
-    background-color: rgb(69, 67, 212);
+    background-color: rgb(163, 76, 180);
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -20,7 +20,7 @@
     float: left;
     width: 30%;
     height: 300px; /* only for demonstration, should be removed */
-    background: rgb(139, 138, 219);
+    background: rgb(202, 177, 241);
     padding: 20px;
   }
   
@@ -47,7 +47,7 @@
   
   /* Style the footer */
   footer {
-    background-color: rgb(94, 92, 221);
+    background-color: rgb(178, 123, 192);
     padding: 10px;
     text-align: center;
     color: white;
