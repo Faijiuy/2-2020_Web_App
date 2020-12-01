@@ -93,7 +93,7 @@ function renderDataTable() {
     let subTax = subTotal * 0.1
     $('#tax').html(subTax.toFixed(2))
 
-    $('#shipping').html(shippH.toFixed(2))
+    $('#addShipping').html(shippH.toFixed(2))
 
     let totalDue = subTotal + subTax + shippH
     $('#totalDue').html(totalDue.toFixed(2))
