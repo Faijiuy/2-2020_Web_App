@@ -8,7 +8,7 @@
   
   /* Style the header */
   header {
-    background-color: #666;
+    background-color: rgb(69, 67, 212);
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -20,7 +20,7 @@
     float: left;
     width: 30%;
     height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
+    background: rgb(139, 138, 219);
     padding: 20px;
   }
   
@@ -34,7 +34,7 @@
     float: left;
     padding: 20px;
     width: 70%;
-    background-color: #f1f1f1;
+    background-color: rgb(228, 203, 238);
     height: 300px; /* only for demonstration, should be removed */
   }
   
@@ -47,7 +47,7 @@
   
   /* Style the footer */
   footer {
-    background-color: #777;
+    background-color: rgb(94, 92, 221);
     padding: 10px;
     text-align: center;
     color: white;
