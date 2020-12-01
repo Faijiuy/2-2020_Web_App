@@ -18,6 +18,9 @@ tr {
     background-color: rgb(242, 228, 255);
 }
 
+tr.bgWhite {
+    background-color: azures;
+}
 
 .bottom-line {
     border-bottom: solid #000 1px;
