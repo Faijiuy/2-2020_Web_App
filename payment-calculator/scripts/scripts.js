@@ -90,7 +90,7 @@ $(document).ready(function () {
             let percentRate = intRate * 100
             let down_pay = item.price * 0.1
             $("#display_int").html(`<p>Chosen interest rate: ${percentRate}%</p>`)
-            $("#display_down").html(`Down Payment: ${down_pay} THB.`)
+            $("#display_down").html(`Down Payment: ${down_pay} THB. <b>OR</b> 10 %.`)
             $("#display_total_pay").html(`Total Payment: ${totalPayment} THB.`)
             $("#display_total_pay_month").html(`<b>Total Payment (monthly):</b> ${totalPayment_inMonth} THB.`)
             $("#display_period_month").html(`<b>Pay for:</b> ${pay_month} months.`)
