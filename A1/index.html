@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+        integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+    <title>iAppleZ Shop</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">iAppleZ</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h3>Products List</h3>
+                <h5>See more details. Click on products' name.</h5></br>
+                <p><a href="iPhone-12-pro.html">iPhone 12 Pro (128GB)</a></p>
+                <p><a href="iPhone-11.html">iPhone 11 (128GB)</a></p>
+                <p><a href="iPhone-XR.html">iPhone XR (128GB)</a></p>
+                <p><a href="MacBook-Pro-13-inch.html">MacBook Pro 2020(13 inch.) - Intel Core</a></p>
+                <p><a href="AirPods.html">AirPods with Case Charge</a></p>
+            </div>
+            <div class="col-sm-8 text-left">
+                <h1 style="font-weight: bold;">Welcome to iAppleZ Shop</h1><br></br>
+                <p>&emsp;Our shop sell the genuine Apple's products come from Apple's factory. Our shop are Apple Authorized
+                    Reseller(AAR) that have been appointed by Apple to sell various Apple's products officially.</p>
+                </br>
+                <div class="well">
+                    <h3>Want to Buy?</h2>
+                        <p>You can buy only one products at the time.</p>
+                        <form id="buy">
+                            <div class="checkbox">
+                                <label><input type="radio" name="product" value="iPhone 12 Pro (128GB)">&emsp;iPhone 12
+                                    Pro (128GB)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" name="product" value="iPhone 11(128GB)">&emsp;iPhone 11
+                                    (128GB)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" name="product" value="iPhone XR (128GB)">&emsp;iPhone XR
+                                    (128GB)</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" name="product"
+                                        value="MacBook Pro 2020(13 inch.) - Intel Core">&emsp;MacBook Pro 2020(13 inch.) - Intel Core</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="radio" name="product" value="AirPods with Case Charge">&emsp;AirPods with Case Charge</label>
+                            </div>
+                            <input type="submit" value="Submit">
+                        </form>
+                </div>
+                <hr>
+                <div class="well" id="payment_call">
+                    <h3>Payment Calculator</h3></br>
+                    <p>
+                        <span id="display_name">Product Name: ...<br /></span>
+                        <span id="display_price">Price: ...<br /></span>
+                    </p>
+                    <h4><b>Interest Rates (Annually)</b></h4>
+                    <button type="button" id="intZero" value="0">0%</button>
+                    <button type="button" id="intFour" value="0.04">4%</button>
+                    <!--
+                    <button type="button" id="intFive" value="0.05">5%</button>
+                    -->
+                    <button type="button" id="intEight" value="0.08">8%</button>
+                    <br>
+                    <p id="display_int">Chosen interest rate: ...</p>
+                    <br>
+                    <h4><b>Payment Periods (Year)</b>
+                        <input type = "text" id = "payment_period">
+                        <input type = "button" value = "Submit" id = "submit_period" style="font-size: 16px">
+                    </h4>
+                    <p id="display_down"></p>
+                    <p id="display_total_pay"></p>
+                    <p id="display_total_pay_month"></p>
+                    <p id="display_period_month"></p>
+                </div>
+                <p style="float: right;"><a href="#">Back to top</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <p>Apitsara Choppradit ID:5710497. This is for educational purposes.</p>
+    </footer>
+</body>
+
+</html>
